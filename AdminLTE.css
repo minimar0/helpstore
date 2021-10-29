@@ -5882,12 +5882,10 @@ section.content {
 }
 
 /* 메인 레이아웃 커스텀 */
-.content > .box:nth-child(1) .row:nth-child(1) .col-md-2,
-.content > .box:nth-child(1) .row:nth-child(2) .col-md-2 {
+.content > .box:nth-child(1) .row:nth-child(1) .col-md-2 {
   width:8.33333333% !important;
 }
-.content > .box:nth-child(1) .row:nth-child(1) .col-md-8,
-.content > .box:nth-child(1) .row:nth-child(2) .col-md-8 {
+.content > .box:nth-child(1) .row:nth-child(1) .col-md-8 {
   width:83.33333333% !important;
 }
 .content > .box:nth-child(1) .row:nth-child(3) .col-md-2 {
@@ -5915,26 +5913,28 @@ section.content {
 
 .col-md-8 .box-widget .box-header .user-block .username {
   display:block;
+  margin-bottom:16px;
   margin-left:0;
 }
 
 .col-md-8 .box-widget .box-header .user-block .username > a {
   display:block;
-  width:440px;
-	font-size:34px;
+  width:410px;
+	font-size:32px;
   color:#333;
+  line-height:1.16;
 }
 
 .col-md-8 .box-widget .box-header .user-block .username .text-muted {
   display:block;
   overflow:hidden;
   position:absolute;
-  bottom:calc(50% - 26px);
+  bottom:calc(50% - 20px);
   right:0;
   margin-left:-12px;
 }
 .col-md-8 .box-widget .box-header .user-block .username .text-muted a {
-	font-size:19px;
+	font-size:14px;
 }
 
 .col-md-8 .box-widget .box-header .user-block .username .text-muted .btn-cacao{
@@ -5943,7 +5943,7 @@ section.content {
 	background-color:#2563EB !important;
 	color:#fff !important;
 	border-radius:6px;
-	padding: 13px 18px  12px 14px !important;
+	padding: 9px 16px  9px 16px !important;
 	line-height: 1.42857143 !important;
 }
 .col-md-8 .box-widget .box-header .user-block .username .text-muted .btn-cacao:nth-child(1) {
@@ -5952,23 +5952,23 @@ section.content {
 }
 
 .col-md-8 .box-widget .box-header .user-block .description {
-  width:331px;
+  width:290px;
   margin-left:0;
-  font-size:16px;
+  font-size:14px;
 }
 
 .content > .box > .box.box-body .row:nth-child(1) .col-md-8  .box-body {
-  margin-top:48px;
+  margin-top:40px;
 }
 
 .content > .box > .box.box-body .row:nth-child(2) {
-  margin-top:48px;
+  margin-top:40px;
 }
 .content > .box > .box.box-body .row .col-md-8 .btn.bg-maroon{
-  padding:11px 20px !important;
+  padding:10px 16px !important;
   border:1px solid #2563EB;
   background-color:transparent !important;
-  font-size:19px !important;
+  font-size:14px !important;
   color:#2563EB !important;
   border-radius:6px;
   font-weight:700;
@@ -5978,11 +5978,11 @@ section.content {
 }
 .content > .box > .box.box-body .row .col-md-8 .btn.bg-maroon::before{
   content:"\f16a";
-  margin-right:10px;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  margin-right:8px;
+  font: normal normal normal 20px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  vertical-align: -2px;
 }
 
 .box-widget .box-header{
@@ -6053,7 +6053,7 @@ section.content {
   border-bottom: none;
 }
 .box-comments .box-comment + .box-comment{
-  margin-top:12px;
+  margin-top:11px;
 }
 .box-comments .comment-text {
   margin-left: 0 !important;
@@ -6072,10 +6072,11 @@ section.content {
   border-radius:15px;
   font-size:12px;
   color:#2563EB !important;
+  font-weight: 500;;
 }
 .box-comments .username strong >a {
   color:#111827;
-  font-size:16px;
+  font-size:14px;
   font-weight:500;
 }
 .box-comments .text-muted {
@@ -6088,7 +6089,7 @@ section.content {
 
 
 .content > .box > .row {
-  margin-top:64px;
+  margin-top:72px;
   padding-bottom:16px;
 }
 
@@ -6108,13 +6109,13 @@ section.content {
   list-style:none;
 }
 .attachment-block .attachment-pushed li + li {
-  margin-top:10px;
+  margin-top:21px;
 }
 .attachment-block .attachment-pushed li p{
   display:flex;
   justify-content:space-between;
   margin:0;
-  font-size:16px;
+  font-size:14px;
   color:#333;
   font-weight:700;
 }
@@ -6665,8 +6666,7 @@ label.itemTitle + .itemTitle,
     padding:0 16px;
   }
   /* 메인 레이아웃 커스텀 */
-  .content > .box:nth-child(1) .row:nth-child(1) .col-md-8,
-  .content > .box:nth-child(1) .row:nth-child(2) .col-md-8 {
+  .content > .box:nth-child(1) .row:nth-child(1) .col-md-8 {
     width:100% !important;
   }
   .content > .box:nth-child(1) .row:nth-child(3) .col-md-4 {
