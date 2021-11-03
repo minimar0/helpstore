@@ -6218,9 +6218,13 @@ label.itemTitle{
   font-weight:400;
   font-size:14px;
 }
-label.itemTitle + .itemTitle,
-.form-group label + label{
-  margin-left:16px;
+label.itemTitle,
+.form-group label{
+  margin-right:16px;
+}
+label.itemTitle:last-child,
+.form-group label:last-child {
+  margin-right:0;;
 }
 
 /* radio  */
@@ -6449,15 +6453,25 @@ label.itemTitle + .itemTitle,
 
 
 
+/* 서브 박스 */
+section.content > .mainbanner + .box {
+  border-radius:6px;
+  background-color:#fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.06), 0 1px 3px 0 rgba(0,0,0,0.1);
+}
 
-
+section.content > .mainbanner + .box > div {
+  border-bottom:1px solid red;
+  padding:24px;
+}
 
 
 
 
 /* 아이템소싱  search */
 .searchLayer {
-  padding:0;
+  padding:0 !important;
+  border-bottom:none !important;
 }
 
 
@@ -6468,12 +6482,8 @@ label.itemTitle + .itemTitle,
 .control-label.categoryTitle2:first-child{
   margin-left:0;
 }
-/* section.content > .mainbanner + .box .searchLayer #searchForm */
-#searchForm {
-  border-radius:6px;
-  background-color:#fff;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.06), 0 1px 3px 0 rgba(0,0,0,0.1);
-}
+
+
 
 #searchForm .row{
   display:flex;
@@ -6531,8 +6541,11 @@ label.itemTitle + .itemTitle,
   color:#4B5563;
   font-weight:500;
 }
-#searchForm div.row:nth-of-type(5) .form-group:first-child label + label {
-  margin-left:16px !important;
+#searchForm div.row:nth-of-type(5) .form-group:first-child label {
+  margin-right:16px !important;
+}
+#searchForm div.row:nth-of-type(5) .form-group:first-child label:last-child {
+  margin-right:0 !important;
 }
 #searchForm div.row:nth-of-type(5) .form-group:first-child + .form-group {
   margin-left:24px;
