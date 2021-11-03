@@ -6228,7 +6228,7 @@ label.itemTitle:last-child,
 }
 
 /* radio  */
-.form-group .iradio_minimal-blue {
+.form-group [class*='iradio_minimal'] {
   position:relative;
   background:none;
   padding-left:24px;
@@ -6236,13 +6236,13 @@ label.itemTitle:last-child,
   font-weight:500;
   color:#4B5563;
 }
-.form-group .iradio_minimal-blue input {
+.form-group [class*='iradio_minimal'] input {
   margin:0;
 }
-.form-group .iradio_minimal-blue + span{
+.form-group [class*='iradio_minimal'] + span{
   padding:0 !important;
 }
-.form-group .iradio_minimal-blue::before{
+.form-group [class*='iradio_minimal']::before{
   content:'';
   display:block;
   position:absolute;
@@ -6254,11 +6254,11 @@ label.itemTitle:last-child,
   border:1px solid #D1D5DB;
   border-radius:50%;
 }
-.form-group .iradio_minimal-blue.checked::before{
+.form-group [class*='iradio_minimal'].checked::before{
   border-color:#2563EB;
   background-color:#2563EB;
 }
-.form-group .iradio_minimal-blue.checked::after{
+.form-group [class*='iradio_minimal'].checked::after{
   content:'';
   display:block;
   position:absolute;
@@ -6271,12 +6271,12 @@ label.itemTitle:last-child,
 }
 
 /* checkbox */
-.form-group .icheckbox_minimal-blue {
+.form-group [class*='icheckbox_minimal'] {
   position:relative;
   background:none;
   padding-left:24px;
 }
-.form-group .icheckbox_minimal-blue::before {
+.form-group [class*='icheckbox_minimal']::before {
   content:'';
   display:block;
   position:absolute;
@@ -6287,11 +6287,23 @@ label.itemTitle:last-child,
   border:1px solid #D1D5DB;
   border-radius:4px;
 }
-.form-group .icheckbox_minimal-blue.checked::before {
+.form-group [class*='icheckbox_minimal'].checked::before {
   border-color:#2563EB;
   background-color:#2563EB;
 }
-.form-group .icheckbox_minimal-blue + span {
+.form-group [class*='icheckbox_minimal'].checked::after {
+	content:'';
+	display:block;
+	position:absolute;
+	top:2px;
+	left:6px;
+	width:4px;
+	height:8px;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	transform:rotate(-135deg);
+}
+.form-group [class*='icheckbox_minimal'] + span {
   padding:0 !important;
   font-size:14px;
   font-weight:500;
@@ -6454,16 +6466,19 @@ label.itemTitle:last-child,
 
 
 /* 서브 박스 */
-section.content > .mainbanner + .box {
+.mainbanner + .box {
   border-radius:6px;
   background-color:#fff;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.06), 0 1px 3px 0 rgba(0,0,0,0.1);
+  color:#4B5563;
 }
 
-section.content > .mainbanner + .box > div {
-  border-bottom:1px solid red;
+.mainbanner + .box > div {
+  border-bottom:1px solid #EDEDED;
   padding:24px;
 }
+
+
 
 
 
@@ -6474,7 +6489,18 @@ section.content > .mainbanner + .box > div {
   border-bottom:none !important;
 }
 
-
+/* .control-label.categoryTitle {
+	display:flex;
+	align-items:center;
+	width: 72px;
+	height:40px;
+	margin-bottom:0;
+	margin-right:4px;
+	padding:0;
+	font-size:16px;
+	color:#4B5563;
+	font-weight:500;
+} */
 .control-label.categoryTitle2,
 .control-label.categoryTitle3 {
   margin-left:56px;
@@ -6673,11 +6699,197 @@ section.content > .mainbanner + .box > div {
 
 
 
+/* 서브 타이틀 */
+.box-header{
+	padding:0;
+}
+.box-header .box-title {
+	font-size:16px;
+	color:#4B5563;
+	font-weight:700;
+	line-height:24px;
+}
+.box-header.with-border {
+	border:none;
+}
+.box-header .box-title .btnCopy {
+	margin-left:12px;
+	padding:3px 12px;
+	background-color:#2563EB;
+	border:none;
+	font-size:13px;
+	color:#fff;
+	border-radius:6px;
+}
+
+
+
+.box-header + .box-body {
+	margin-top:18px;
+}
+
+/* 키워드 도구 */
+#categoryLayer {
+	margin-top:12px;
+	font-size:14px;
+	color:#4B5563;
+}
+
+#shoppingKeywordSection,
+#searchSectionSection  {
+	padding:24px;
+	border-bottom: 1px solid #EDEDED;
+}
+
+
+
+
+#searchKeywordLayer,
+#autoKeywordLayer,
+#shoppingKeywordLayer {
+	margin-top:10px;
+}
+.chart-responsive > span.btn {
+	margin-top:8px;
+	margin-right:5px;
+	padding:9px 14px;
+	border:1px solid #2563EB;
+	background-color:#fff;
+	color:#2563EB;
+	font-size:13px;
+	font-weight:500;
+	border-radius: 6px;
+}
+.chart-responsive > span.btn:active:focus,
+.chart-responsive > span.btn:active:hover {
+	color:#fff;
+	border-color: #fff;
+	background-color:#2563EB;
+}
+
+#searchSectionSection .row {
+	margin:12px 0 0 0;
+}
+#searchSectionSection .row:first-child {
+	margin-top:0;
+}
+#searchSectionSection .col-md-1 {
+	width:156px;
+	padding:0;
+}
+
+#searchSectionSection .col-md-1 .btn-flat {
+	border:none;
+	padding:0;
+	font-size:14px;
+	color:#4B5563;
+	font-weight:500;
+}
+#searchSectionSection .col-md-1 .btn-flat:active {
+	box-shadow: none;
+}
+#searchSectionSection .col-md-10 {
+	margin-top:-8px;
+	padding:0;
+}
+
+#searchSectionSection .col-md-10 .btn {
+	margin:8px 8px 0 0;
+	padding:9px 16px;
+	font-size:13px;
+	color:#4B5563;
+	border:1px solid #D1D5DB;
+	background-color:#fff;
+	border-radius: 6px;
+}
+
+#searchSectionSection .col-md-10 .btn:first-child {
+	border-color:#2563EB;
+	background-color:#DBEAFE;
+	color:#2563EB;
+}
+
+
+#outlinkLayer {
+	color:#4B5563;
+}
+#outlinkLayer label {
+	width:156px;
+	margin-bottom:12px;
+	margin-right:0 !important;
+	padding:0;
+	font-weight:500;
+}
+#outlinkLayer .outlink {
+	padding:0 5px;
+	font-size:14px;
+	color:#3B82F6;
+}
+
+#trendForm .row {
+	margin-left:0;
+	margin-right:0;
+}
+
+#trendForm .control-label {
+	width:156px;
+	margin-right:0;
+	font-size:14px;
+}
+#trendForm .row .form-group {
+	margin-bottom:20px !important;
+}
+
+#trendForm .row:nth-child(1) select {
+	width:206px;
+}
+#trendForm .row:nth-child(2) .control-label {
+	height:auto;
+}
+#trendForm .form-group label {
+	margin-bottom:0;
+	font-weight:400;
+}
+#trendForm .form-group .btn-primary {
+	min-width: 128px;
+    border-color: #2563EB;
+    padding: 9px 24px;
+    border-radius: 6px;
+    background-color: transparent !important;
+    font-size: 14px;
+    color: #2563EB;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 991px) {
   section.content {
     padding:0 16px;
   }
+
   /* 메인 레이아웃 커스텀 */
   .content > .box:nth-child(1) .row:nth-child(1) .col-md-8 {
     width:100% !important;
