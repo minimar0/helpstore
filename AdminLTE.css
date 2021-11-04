@@ -6780,7 +6780,7 @@ label.itemTitle:last-child,
   border:none;
   color:#9CA3AF;
 }
-.box-title + .box-tools.pull-right {
+.box-title + .box-tools.pull-right .btn-box-tool {
   display:none;
 }
 
@@ -6955,16 +6955,16 @@ label.itemTitle:last-child,
 #chartBox {
   padding:0;
 }
-#chartBox > div {
-  padding:24px;
+#chartBox .box-header {
+  padding:24px 24px 0;
 }
 
 /* 키워드도구 - 트렌드 */
 #trendForm .row {
 	margin-left:0;
 	margin-right:0;
-  padding-left:0 !important;
-  padding-right:0 !important;
+  padding-left:24px !important;
+  padding-right:24px !important;
 }
 #trendForm .control-label {
 	width:156px;
@@ -7213,6 +7213,30 @@ label.itemTitle:last-child,
     display:block;
   }
 
+  /* 키워드도구 - 카운트 박스 */
+  .small-box .inner {
+    padding:27px 8px;
+  }
+  .small-box .inner p {
+    font-size:14px;
+  }
+
+  /* 키워드도구 - 안내문구 및 엑셀다운로드 버튼 */
+  #chartBox + .tableBox {
+    padding-top:24px !important;
+    text-align: center;
+  }
+  #chartBox + .tableBox::before{
+    display:none;
+  }
+  #chartBox + .tableBox > span:nth-of-type(1) {
+    display: block;
+    margin:0 0 5px 0;
+  }
+  #chartBox + .tableBox #dataTable {
+    margin-top:24px;
+  }
+
   /* 키워드도구 - 아이템 소싱 */
   #outlinkLayer label {
     width:auto;
@@ -7221,5 +7245,8 @@ label.itemTitle:last-child,
   /* 키워드도구 - 트렌드 */
   #trendForm .row .form-group {
     margin-bottom:5px !important
+  }
+  #trendForm .row:nth-child(1) select {
+    width:100%;
   }
 }
