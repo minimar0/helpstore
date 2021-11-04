@@ -6593,43 +6593,6 @@ label.itemTitle:last-child,
   padding-left:0 !important;
   padding-right:4px !important;
 }
-.dataarea #dataTable thead tr th:nth-child(1) {
-  width:6.3% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(2) {
-  width:auto !important;
-}
-.dataarea #dataTable thead tr th:nth-child(3) {
-  width:10.5% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(4) {
-  width:10.5% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(5) {
-  width:10.5% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(6) {
-  display:none;
-}
-.dataarea #dataTable thead tr th:nth-child(7) {
-  background-color:#F9FAFB !important;
-  width:10.5% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(8) {
-  width:6% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(9) {
-  width:6% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(10) {
-  width:6% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(11) {
-  width:6% !important;
-}
-.dataarea #dataTable thead tr th:nth-child(12) {
-  width:6% !important;
-}
 #dataTable thead tr th .tablesorter-header-inner {
   position:relative;
   padding-right:10px;
@@ -6688,19 +6651,55 @@ label.itemTitle:last-child,
 #dataTable tbody tr td {
   font-size:14px !important;
 }
-#dataTable tbody tr td:nth-child(1),
-#dataTable tbody tr td:nth-child(2) {
+.dataarea #dataTable tbody tr td:nth-child(1),
+.dataarea #dataTable tbody tr td:nth-child(2) {
   text-align:center;
 }
-#dataTable tbody tr td:nth-child(6) {
-  display:none;
-}
-#dataTable tbody tr td:nth-child(7) {
+
+.dataarea #dataTable tbody tr td:nth-child(7) {
   background-color:#FFF4F9 !important;
   font-weight:700;
 }
-#dataTable tbody tr td .btnDetailInquiry {
 
+.dataarea #dataTable thead tr th:nth-child(1) {
+  width:6.3% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(2) {
+  width:auto !important;
+}
+.dataarea #dataTable thead tr th:nth-child(3) {
+  width:10.5% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(4) {
+  width:10.5% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(5) {
+  width:10.5% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(6) {
+  display:none;
+}
+.dataarea #dataTable thead tr th:nth-child(7) {
+  background-color:#F9FAFB !important;
+  width:10.5% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(8) {
+  width:6% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(9) {
+  width:6% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(10) {
+  width:6% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(11) {
+  width:6% !important;
+}
+.dataarea #dataTable thead tr th:nth-child(12) {
+  width:6% !important;
+}
+.dataarea #dataTable tbody tr td:nth-child(6) {
+  display:none;
 }
 
 
@@ -6948,14 +6947,68 @@ label.itemTitle:last-child,
 }
 
 
+/* 키워드도구 - 테이블 */
+#chartBox + .tableBox #dataTable thead tr th {
+  padding:3px 2px !important;
+  font-size:13px;
+}
+
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(1) {width:3.5% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(2) {width:auto !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(3) {width:9.7% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(4) {width:9.7% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(5) {width:9.7% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(6) {width:8.3% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(7) {width:6.3% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(8) {width:6.3% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(9) {width:6.3% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(10) {width:6.3% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(11) {width:6.3% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(12) {width:7% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(13) {width:5% !important;}
+
+#chartBox + .tableBox #dataTable thead tr th:nth-child(1) .tablesorter-header-inner,
+#chartBox + .tableBox #dataTable thead tr th:nth-child(12) .tablesorter-header-inner,
+#chartBox + .tableBox #dataTable thead tr th:nth-child(13) .tablesorter-header-inner {
+  padding:0;
+}
+#chartBox + .tableBox #dataTable thead tr th:nth-child(1) .tablesorter-header-inner::before,
+#chartBox + .tableBox #dataTable thead tr th:nth-child(1) .tablesorter-header-inner::after,
+#chartBox + .tableBox #dataTable thead tr th:nth-child(12) .tablesorter-header-inner::before,
+#chartBox + .tableBox #dataTable thead tr th:nth-child(12) .tablesorter-header-inner::after,
+#chartBox + .tableBox #dataTable thead tr th:nth-child(13) .tablesorter-header-inner::before,
+#chartBox + .tableBox #dataTable thead tr th:nth-child(13) .tablesorter-header-inner::after {
+  display:none;
+}
+
+#chartBox + .tableBox #dataTable tbody tr td:nth-child(1),
+#chartBox + .tableBox #dataTable tbody tr td:nth-child(2),
+#chartBox + .tableBox #dataTable tbody tr td:nth-child(7) {
+  text-align:center;
+}
 
 
+#chartBox + .tableBox #dataTable .btnInquiryAll {
+  background-color:#2563EB;
+  border-color:#2563EB;
+  padding:4px 7px;
+  color:#fff;
+}
+#chartBox + .tableBox #dataTable .btnDetailInquiry {
+  background-color:#fff;
+  border-color:#2563EB;
+  padding:5px 15px 3px;
+  color:#2563EB;
+}
 
-
-
-
-
-
+#chartBox + .tableBox #dataTable .btnDeleteRelKeyword {
+  padding:4px 11px;
+  background-color:#fff;
+  border-color:#EF4444;
+  color:#EF4444;
+  border-radius:6px;
+  font-weight:700;
+}
 
 
 
