@@ -6187,7 +6187,7 @@ footer.main-footer .pull-right a{
 }
 
 /* input */
-.form-group input{
+.form-control[type='text']{
   height:40px;
   border-radius:7px;
   border-color:#d1d5db;
@@ -6733,27 +6733,7 @@ label.itemTitle:last-child,
 	margin-top:18px;
 }
 
-/* 키워드 도구 */
-#categoryLayer {
-	margin-top:12px;
-	font-size:14px;
-	color:#4B5563;
-}
-
-#shoppingKeywordSection,
-#searchSectionSection  {
-	padding:24px;
-	border-bottom: 1px solid #EDEDED;
-}
-
-
-
-
-#searchKeywordLayer,
-#autoKeywordLayer,
-#shoppingKeywordLayer {
-	margin-top:10px;
-}
+/* 키워드도구 */
 .chart-responsive > span.btn {
 	margin-top:8px;
 	margin-right:5px;
@@ -6772,6 +6752,62 @@ label.itemTitle:last-child,
 	background-color:#2563EB;
 }
 
+/* 키워드도구 - 인풋 */
+.box-title .input-group {
+  width:360px;
+}
+.box-title .input-group input {
+  color:#1F2937;
+  border-radius: 7px !important;
+}
+.box-title .input-group #searchBtn {
+  background-color:transparent;
+}
+.box-title .input-group .input-group-btn {
+  position:absolute;
+  top:0;
+  right:0;
+  width:40px;
+  height:100%;
+}
+.box-title .input-group #searchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+  height:40px;
+  padding:0;
+  border:none;
+  color:#9CA3AF;
+}
+.box-title + .box-tools.pull-right {
+  display:none;
+}
+
+/* 키워드도구 - 카테고리 */
+#categoryLayer {
+	margin-top:12px;
+	font-size:14px;
+	color:#4B5563;
+}
+
+/* 키워드도구 - 검색어,검색섹션 */
+#shoppingKeywordSection,
+#searchSectionSection  {
+	padding:24px;
+	border-bottom: 1px solid #EDEDED;
+}
+
+#searchKeywordLayer,
+#autoKeywordLayer,
+#shoppingKeywordLayer {
+	margin-top:10px;
+}
+
+/* 키워드도구 - 검색섹션 */
+#searchSectionSection {
+  border-bottom:none !important;
+}
 #searchSectionSection .row {
 	margin:12px 0 0 0;
 }
@@ -6785,7 +6821,6 @@ label.itemTitle:last-child,
   min-height:36px;
 	padding:0;
 }
-
 #searchSectionSection .col-md-1 .btn-flat {
 	border:none;
 	padding:0;
@@ -6800,7 +6835,6 @@ label.itemTitle:last-child,
 	margin-top:-8px;
 	padding:0;
 }
-
 #searchSectionSection .col-md-10 .btn {
 	margin:8px 8px 0 0;
 	padding:7px 16px 8px;
@@ -6810,7 +6844,6 @@ label.itemTitle:last-child,
 	background-color:#fff;
 	border-radius: 6px;
 }
-
 #searchSectionSection .col-md-10 .btn:first-child {
 	border-color:#2563EB;
 	background-color:#DBEAFE;
@@ -6818,29 +6851,91 @@ label.itemTitle:last-child,
 }
 
 
-
+/* 키워드도구 - 카운트 박스 */
 #countBox,
 #countBox + .tableBox {
-  margin-left:-7px;
-  margin-right:-7px;
+  margin:-7px;
   padding:24px 24px 0;
 }
 #countBox + .tableBox {
-  padding:16px 24px 24px;
+  margin-top:-16px;
+  padding:0 24px 24px;
   border-bottom:1px solid #EDEDED;
 }
 
 #countBox > div,
 #countBox + .tableBox > div {
-  padding:0 7px;
+  padding:7px;
 }
 
 #countBox > div .small-box, 
 #countBox + .tableBox > div .small-box {
   margin-bottom:0;
 }
+.small-box {
+  overflow: hidden;
+  border-radius: 6px;
+  background-color:#fff !important;
+  box-shadow:0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.small-box .inner {
+  display: flex;
+  flex-direction: column-reverse;
+  padding:27px 16px;
+}
+.small-box .icon {
+  top:20px;
+  right:20px;
+  font-size:initial;
+  color:#60A5FA;
+}
+.small-box:hover .icon {font-size:initial;}
+
+.small-box .icon .fa-tv {font-size:42px;}
+.small-box .icon .ion-stats-bars {font-size:72px;}
+.small-box .icon .ion-person-add {font-size:50px;}
+.small-box .icon .ion-pie-graph {font-size:50px;}
+.small-box .icon .fa-shopping-cart {font-size:50px;}
+
+#countBox .col-lg-3:nth-of-type(1) .small-box .icon {top:30px;}
+
+.small-box .inner h3,
+.small-box .inner p{
+  margin-bottom:0;
+  flex:1 1 auto;
+  font-weight:500;
+}
+.small-box .inner h3 {
+  margin-top:7px;
+  font-size:24px;
+  color:#222D32;
+  font-weight:700;
+}
+.small-box .inner h3 sup {
+  font-size:14px !important;
+  font-weight:400;
+}
+
+.small-box .inner p {
+  font-size:16px;
+  color:#6B7280;
+}
+.small-box .small-box-footer {
+  padding:10px 16px;
+  background-color:#F9FAFB;
+  color:#2563EB;
+  text-align:left;
+}
+.small-box .small-box-footer i {
+  display:none;
+}
+.small-box .small-box-footer:hover {
+  background-color:#2563EB;
+  color:#F9FAFB;
+}
 
 
+/* 키워드도구 - 아이템 소싱 */
 #outlinkLayer {
 	color:#4B5563;
 }
@@ -6852,16 +6947,25 @@ label.itemTitle:last-child,
 	font-weight:500;
 }
 #outlinkLayer .outlink {
-	padding:0 5px;
 	font-size:14px;
 	color:#3B82F6;
 }
 
+/* 키워드도구 - 트렌드, 챠트 박스 */
+#chartBox {
+  padding:0;
+}
+#chartBox > div {
+  padding:24px;
+}
+
+/* 키워드도구 - 트렌드 */
 #trendForm .row {
 	margin-left:0;
 	margin-right:0;
+  padding-left:0 !important;
+  padding-right:0 !important;
 }
-
 #trendForm .control-label {
 	width:156px;
 	margin-right:0;
@@ -6870,7 +6974,6 @@ label.itemTitle:last-child,
 #trendForm .row .form-group {
 	margin-bottom:20px !important;
 }
-
 #trendForm .row:nth-child(1) select {
 	width:206px;
 }
@@ -6881,7 +6984,6 @@ label.itemTitle:last-child,
 	margin-bottom:0;
 	font-weight:400;
 }
-
 #trendForm .row:nth-child(3) {
   padding:24px 0;
   border-top:1px solid #EDEDED;
@@ -6898,11 +7000,13 @@ label.itemTitle:last-child,
 }
 
 
+/* 키워드도구 - 챠트 */
 #trendForm + .row {
   margin-left:0;
   margin-right:0;
 }
 
+/* 키워드도구 - 안내문구 및 엑셀다운로드 버튼 */
 #chartBox + .tableBox {
   padding-top:34px !important;
 }
@@ -6937,7 +7041,6 @@ label.itemTitle:last-child,
   background-color:#2563EB !important;
   color:#fff;
 }
-
 #chartBox + .tableBox #dataTable {
   margin-top:35px;
 }
@@ -6952,7 +7055,6 @@ label.itemTitle:last-child,
   padding:3px 2px !important;
   font-size:13px;
 }
-
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(1) {width:3.5% !important;}
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(2) {width:auto !important;}
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(3) {width:9.7% !important;}
@@ -6980,14 +7082,11 @@ label.itemTitle:last-child,
 #chartBox + .tableBox #dataTable thead tr th:nth-child(13) .tablesorter-header-inner::after {
   display:none;
 }
-
 #chartBox + .tableBox #dataTable tbody tr td:nth-child(1),
 #chartBox + .tableBox #dataTable tbody tr td:nth-child(2),
-#chartBox + .tableBox #dataTable tbody tr td:nth-child(7) {
+#chartBox + .tableBox #dataTable tbody tr td:nth-child(10) {
   text-align:center;
 }
-
-
 #chartBox + .tableBox #dataTable .btnInquiryAll {
   background-color:#2563EB;
   border-color:#2563EB;
@@ -7000,7 +7099,6 @@ label.itemTitle:last-child,
   padding:5px 15px 3px;
   color:#2563EB;
 }
-
 #chartBox + .tableBox #dataTable .btnDeleteRelKeyword {
   padding:4px 11px;
   background-color:#fff;
@@ -7113,5 +7211,15 @@ label.itemTitle:last-child,
   }
   .attachment-block .attachment-pushed li:last-child p{
     display:block;
+  }
+
+  /* 키워드도구 - 아이템 소싱 */
+  #outlinkLayer label {
+    width:auto;
+    margin-right:5px;
+  }
+  /* 키워드도구 - 트렌드 */
+  #trendForm .row .form-group {
+    margin-bottom:5px !important
   }
 }
