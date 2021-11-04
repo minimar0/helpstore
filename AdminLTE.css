@@ -6593,41 +6593,41 @@ label.itemTitle:last-child,
   padding-left:0 !important;
   padding-right:4px !important;
 }
-#dataTable thead tr th:nth-child(1) {
+.dataarea #dataTable thead tr th:nth-child(1) {
   width:6.3% !important;
 }
-#dataTable thead tr th:nth-child(2) {
+.dataarea #dataTable thead tr th:nth-child(2) {
   width:auto !important;
 }
-#dataTable thead tr th:nth-child(3) {
+.dataarea #dataTable thead tr th:nth-child(3) {
   width:10.5% !important;
 }
-#dataTable thead tr th:nth-child(4) {
+.dataarea #dataTable thead tr th:nth-child(4) {
   width:10.5% !important;
 }
-#dataTable thead tr th:nth-child(5) {
+.dataarea #dataTable thead tr th:nth-child(5) {
   width:10.5% !important;
 }
-#dataTable thead tr th:nth-child(6) {
+.dataarea #dataTable thead tr th:nth-child(6) {
   display:none;
 }
-#dataTable thead tr th:nth-child(7) {
+.dataarea #dataTable thead tr th:nth-child(7) {
   background-color:#F9FAFB !important;
   width:10.5% !important;
 }
-#dataTable thead tr th:nth-child(8) {
+.dataarea #dataTable thead tr th:nth-child(8) {
   width:6% !important;
 }
-#dataTable thead tr th:nth-child(9) {
+.dataarea #dataTable thead tr th:nth-child(9) {
   width:6% !important;
 }
-#dataTable thead tr th:nth-child(10) {
+.dataarea #dataTable thead tr th:nth-child(10) {
   width:6% !important;
 }
-#dataTable thead tr th:nth-child(11) {
+.dataarea #dataTable thead tr th:nth-child(11) {
   width:6% !important;
 }
-#dataTable thead tr th:nth-child(12) {
+.dataarea #dataTable thead tr th:nth-child(12) {
   width:6% !important;
 }
 #dataTable thead tr th .tablesorter-header-inner {
@@ -6940,7 +6940,7 @@ label.itemTitle:last-child,
 }
 
 #chartBox + .tableBox #dataTable {
-  margin-top:44px;
+  margin-top:35px;
 }
 
 #chartBox + .tableBox > span:nth-of-type(1) #refreshCount {
