@@ -6295,7 +6295,7 @@ label.itemTitle:last-child,
 	content:'';
 	display:block;
 	position:absolute;
-	top:2px;
+	top:3px;
 	left:6px;
 	width:4px;
 	height:8px;
@@ -6577,7 +6577,7 @@ label.itemTitle:last-child,
   margin-left:24px;
 }
 
-/* 아이템소싱 table */
+/* 아이템소싱, 키워드도구 table */
 #searchForm + .dataarea {
   overflow:hidden;
   margin-top:36px;
@@ -6685,6 +6685,9 @@ label.itemTitle:last-child,
   border-right:5px solid transparent;
   border-top:6px solid #9CA3AF;
 }
+#dataTable tbody tr td {
+  font-size:14px !important;
+}
 #dataTable tbody tr td:nth-child(1),
 #dataTable tbody tr td:nth-child(2) {
   text-align:center;
@@ -6695,6 +6698,9 @@ label.itemTitle:last-child,
 #dataTable tbody tr td:nth-child(7) {
   background-color:#FFF4F9 !important;
   font-weight:700;
+}
+#dataTable tbody tr td .btnDetailInquiry {
+
 }
 
 
@@ -6774,7 +6780,10 @@ label.itemTitle:last-child,
 	margin-top:0;
 }
 #searchSectionSection .col-md-1 {
+  display: flex;
+  align-items: center;
 	width:156px;
+  min-height:36px;
 	padding:0;
 }
 
@@ -6795,7 +6804,7 @@ label.itemTitle:last-child,
 
 #searchSectionSection .col-md-10 .btn {
 	margin:8px 8px 0 0;
-	padding:9px 16px;
+	padding:7px 16px 8px;
 	font-size:13px;
 	color:#4B5563;
 	border:1px solid #D1D5DB;
@@ -6807,6 +6816,29 @@ label.itemTitle:last-child,
 	border-color:#2563EB;
 	background-color:#DBEAFE;
 	color:#2563EB;
+}
+
+
+
+#countBox,
+#countBox + .tableBox {
+  margin-left:-7px;
+  margin-right:-7px;
+  padding:24px 24px 0;
+}
+#countBox + .tableBox {
+  padding:16px 24px 24px;
+  border-bottom:1px solid #EDEDED;
+}
+
+#countBox > div,
+#countBox + .tableBox > div {
+  padding:0 7px;
+}
+
+#countBox > div .small-box, 
+#countBox + .tableBox > div .small-box {
+  margin-bottom:0;
 }
 
 
@@ -6850,9 +6882,46 @@ label.itemTitle:last-child,
 	margin-bottom:0;
 	font-weight:400;
 }
+
+#trendForm .row:nth-child(3) {
+  padding:24px 0;
+  border-top:1px solid #EDEDED;
+  border-bottom:1px solid #EDEDED;
+}
+#trendForm .row:nth-child(3) .form-group {
+  margin-bottom:0 !important;
+}
 #trendForm .form-group .btn-primary {
-	min-width: 128px;
+	  display:block;
+    height:40px;
+    background-color:#2563EB !important;
+    color:#fff !important;
+}
+
+
+#trendForm + .row {
+  margin-left:0;
+  margin-right:0;
+}
+
+#chartBox + .tableBox {
+  padding-top:34px !important;
+}
+#chartBox + .tableBox::before {
+  content:'';
+  display:inline-block;
+  width:24px;
+}
+#chartBox + .tableBox > span:nth-of-type(1) {
+  display:inline-flex;
+  flex-direction:row-reverse;
+  margin-top:-10px;
+  margin-right:24px;
+}
+#chartBox + .tableBox > span:nth-of-type(1) > a {
+    min-width: 128px;
     border-color: #2563EB;
+    margin-left:12px;
     padding: 9px 24px;
     border-radius: 6px;
     background-color: transparent !important;
@@ -6861,14 +6930,22 @@ label.itemTitle:last-child,
     font-weight: 500;
     text-align: center;
 }
+#chartBox + .tableBox > span:nth-of-type(1) > a:last-child {
+  margin-left:0;
+}
+#chartBox + .tableBox > span:nth-of-type(1) > a:nth-child(1) {
+  border-color:#2563EB;
+  background-color:#2563EB !important;
+  color:#fff;
+}
 
+#chartBox + .tableBox #dataTable {
+  margin-top:44px;
+}
 
-
-
-
-
-
-
+#chartBox + .tableBox > span:nth-of-type(1) #refreshCount {
+  color:#2563EB !important;
+}
 
 
 
