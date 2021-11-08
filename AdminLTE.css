@@ -7236,8 +7236,8 @@ section.content > .box + .box {
   margin-bottom:20px;
 }
 .box > .box-body > .form-group label,
-#changeForm2 > label,
-#changeForm3 .form-group > label {
+#changeForm2 label,
+#changeForm3 label {
   width:148px;
   margin: 0;
   font-weight:500;
@@ -7269,6 +7269,9 @@ section.content > .box + .box {
 #changeForm2 .input-group {
   display:inline-block;
   margin:0;
+}
+#changeForm2 .input-group + .input-group {
+  margin-left:12px;
 }
 #changeForm2 .input-group input {
   width:240px;
@@ -7494,4 +7497,29 @@ section.content > .box + .box {
   #trendForm .row:nth-child(1) select {
     width:100%;
   }
+
+  /* 마이 */
+  #changeForm  label,
+  #changeForm2 label,
+  #changeForm3 label {
+    display:block;
+    margin-bottom:10px;
+  }
+  #changeForm2 .input-group + .input-group {
+    margin-top:10px;
+    margin-left:0;
+  }
+  #changeForm2 .input-group:nth-child(2) input {
+    width:calc(100% - 125px);
+  }
+  #changeForm2 .input-group:nth-child(3) input {
+    width:calc(100% - 96px);
+  }
+  #changeForm2 .input-group-btn .btn {
+    margin-left:10px;
+  }
+  #changeForm2 {
+    display:block;
+  }
+
 }
