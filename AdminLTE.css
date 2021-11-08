@@ -5825,6 +5825,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .fa.fa-gears::before {
   content:"\f013" !important;
 }
+
+
 /* 사이드바 */
 .sidebar-menu {
   margin-top:30px;
@@ -5832,17 +5834,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .sidebar-menu>li > a > i {
   display:none !important;
 }
-.sidebar-menu > li > a{
-  padding:8px 60px 8px 32px;
+.sidebar-menu > li > a {
+  padding:12px 60px 12px 32px;
   border-left:none !important;
   font-size:15px;
   color:#fff !important;
   font-weight:400;
 }
-.sidebar-menu li > a > .pull-right-container{
+.sidebar-menu li > a > .pull-right-container {
   right:30px;
 }
-.sidebar-menu > li > a .pull-right-container .label{
+.sidebar-menu > li > a .pull-right-container .label {
   padding:4px 14px 4px 13px;
   background-color:#2563EB !important;
   border-radius:15px;
@@ -5853,27 +5855,43 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .sidebar-menu > li > a .pull-right-container > i{
   font-size:20px;
   color:#9CA3AF;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) !important;
 }
 .sidebar-menu > li.menu-open > a .pull-right-container > i{
-  transform: rotate(90deg);
+  transform: rotate(90deg) !important;
 }
-
 .sidebar-mini.sidebar-collapse .sidebar-menu>li > a > i {
   display:inline-block !important;
 }
 .sidebar-mini.sidebar-collapse .sidebar-menu > li > a {
   padding:12px 5px 12px 15px;
 }
-
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > a > .pull-right-container {
-  top:-25px !important;
+  top:-26px !important;
 }
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > a > span {
   margin-left:0 !important;
 }
 
+.sidebar .treeview-menu {
+  background-color:#767D87 !important;
+  padding:14px 32px;
+}
+.sidebar .treeview-menu li a {
+  padding:8px 0;
+  color:#B5BBC6 !important;
+}
+.sidebar .treeview-menu li.active a,
+.sidebar .treeview-menu li.active a:hover {
+  color:#fff !important;
+}
+.sidebar .treeview-menu li a i {
+  display:none;
+}
 
+.sidebar-collapse .sidebar .treeview-menu {
+  padding:5px 20px;
+}
 
 /* 메인 - html을 수정하지 못하여 어쩔 수 없이 col- 스타일로 커스텀 진행 */
 section.content {
@@ -6407,6 +6425,7 @@ label.itemTitle:last-child,
   color:#4B5563;
   font-weight:400;
   text-align:right;
+  /* text-align: center; */
   vertical-align: middle;
 }
 .table > tbody > tr > td a {
