@@ -6097,6 +6097,11 @@ label.itemTitle:last-child,
   font-weight:700;
   line-height:1.5;
   top:auto;
+  font:12px/18px Arial,Sans-serif;
+  font-weight:700;
+}
+.table td .btnDeleteJob::before {
+  content:'X';
 }
 
 /* 헤더 */
@@ -6164,6 +6169,7 @@ label.itemTitle:last-child,
 
 .sidebar .treeview-menu {
   background-color:#767D87 !important;
+  margin:0 !important;
   padding:14px 32px;
 }
 .sidebar .treeview-menu li a {
@@ -7154,9 +7160,9 @@ footer.main-footer .pull-right a{
 }
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(1) {width:3.5% !important;}
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(2) {width:auto !important;}
-#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(3) {width:9.7% !important;}
-#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(4) {width:9.7% !important;}
-#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(5) {width:9.7% !important;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(3) {width:9.7% !important;border-bottom:none;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(4) {width:9.7% !important;border-bottom:none;}
+#chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(5) {width:9.7% !important;border-bottom:none;}
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(6) {width:8.3% !important;}
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(7) {width:6.3% !important;}
 #chartBox + .tableBox #dataTable thead tr:first-child th:nth-child(8) {width:6.3% !important;}
@@ -7197,6 +7203,7 @@ footer.main-footer .pull-right a{
   color:#2563EB;
 }
 #chartBox + .tableBox #dataTable .btnDeleteRelKeyword {
+  min-width:32px;
   padding:4px 11px;
   background-color:#fff;
   border-color:#EF4444;
@@ -7205,6 +7212,67 @@ footer.main-footer .pull-right a{
   font-weight:700;
 }
 
+/* 키워드도구 - 멀티 */
+
+.mainbanner + .box > .box-header.with-border label {
+  display:flex;
+  align-items: center;
+  font-weight:400;
+}
+.mainbanner + .box > .box-header.with-border label > input {
+  margin-right:4px;
+}
+.mainbanner + .box > .box-header.with-border .form-group {
+  margin-bottom:16px;
+}
+.mainbanner + .box > .box-header.with-border .form-group + .form-group {
+  margin-left:0;
+}
+#searchForm textarea {
+  margin-top:24px;
+}
+.form-group #searchBtn {
+  color:#fff !important;
+  background-color:#2563EB !important;
+}
+.form-group #searchBtn i {
+  display:none;
+}
+#chartBox + .table-responsive .tablebox + span {
+  padding:24px;
+}
+#chartBox + .table-responsive .tablebox + span input {
+  margin-right:4px;
+}
+#chartBox + .table-responsive .tablebox + span + span {
+  margin-right:24px;
+}
+#chartBox + .table-responsive .tablebox + span + span .btn {
+  min-width: 128px;
+  border-color: #2563EB;
+  margin-left: 12px;
+  padding: 9px 24px;
+  border-radius: 6px;
+  background-color: #2563EB !important;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+#chartBox + .table-responsive span:nth-child(3) .btn + .btn {
+  background-color:#fff !important;
+  color:#2563EB;
+}
+
+#chartBox + .table-responsive>  #dataTable thead tr th {
+  padding: 3px 2px !important;
+  font-size: 13px;
+}
+
+#chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(3) {border-bottom:none;}
+#chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(8) {border-bottom:none;}
+#chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(9) {border-bottom:none;}
+
+
 
 /* 광고전략도구 - 광고경쟁분석 */
 .box-header .box-title #limitCount,
@@ -7212,20 +7280,19 @@ footer.main-footer .pull-right a{
   color:#2563EB;
 }
 
-/*http://helpstore.shop/strategy*/
-.box-header > .box-tools {
+.box-header > .box-title + .box-tools {
   top:calc(50% - 20px);
   right:24px;
 }
 .box-tools .btn,
 .box-tools .btn:active {
-  padding:9px 38px;
+  min-width:128px;
+  padding:9px 12px;
   background-color:#2563EB;
   color:#fff;
   border-radius:6px;
   border-color:#2563EB;
 }
-
 
 
 /* 광고비 도구 */
@@ -7527,10 +7594,53 @@ footer.main-footer .pull-right a{
 .content > .box .box-header + .box-body.table-responsive {
   margin-top:0;
 }
+.box-header > .box-title + .box-header.pull-right {
+  position:absolute;
+  top: calc(50% - 20px);
+  right: 24px;
+}
+.pull-right > #btnDeleteJob {
+  min-width:128px;
+  margin-right:7px;
+  padding: 9px 12px;
+  background-color: #fff;
+  color: #2563EB;
+  border-radius: 6px;
+  border-color: #2563EB;
+}
+.pull-right > #btnDeleteJob + .btn {
+  min-width:128px;
+  padding: 9px 12px;
+  background-color: #2563EB;
+  color: #fff;
+  border-radius: 6px;
+  border-color: #2563EB;
+}
+.box > .box-header.pull-right .box-title {
+  font-size:14px !important;
+}
+.box > .box-header.pull-right .box-title + .box-title {
+  margin-left:7px;
+}
+.box > .box-header.pull-right .box-title #limitCount8,
+.box > .box-header.pull-right .box-title #refreshCount {
+  color:#2563EB;
+}
 
-
-
-
+.box > .box-header.pull-right .box-title #btnExcel,
+.box > .box-header.pull-right .box-title #btnRequest {
+  min-width:128px;
+  margin-right:7px;
+  padding: 9px 12px;
+  background-color: #fff;
+  color: #2563EB;
+  border-radius: 6px;
+  border-color: #2563EB;
+}
+.box > .box-header.pull-right .box-title #btnRequest {
+  background-color: #2563EB;
+  color: #fff;
+}
 
 
 
