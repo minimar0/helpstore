@@ -6408,7 +6408,7 @@ section.content {
 }
 
 
-.content > .box > .row {
+.content > .box > .row .col-md-8 {
   margin-top:72px;
   padding-bottom:16px;
 }
@@ -6513,6 +6513,10 @@ footer.main-footer .pull-right a{
   font-weight:700;
   color:#333;
   letter-spacing: -0.47px;
+}
+.content-header > h1 small {
+  margin-left:12px;
+  color:#9CA3AF;
 }
 .content-header .btn-group {
   margin-left:5px;
@@ -6999,6 +7003,7 @@ footer.main-footer .pull-right a{
 .small-box .icon .ion-person-add {font-size:50px;}
 .small-box .icon .ion-pie-graph {font-size:50px;}
 .small-box .icon .fa-shopping-cart {font-size:50px;}
+.small-box .icon .fa-arrow-circle-right {font-size:50px;}
 
 #countBox .col-lg-3:nth-of-type(1) .small-box .icon {top:30px;}
 
@@ -7032,10 +7037,7 @@ footer.main-footer .pull-right a{
 .small-box .small-box-footer i {
   display:none;
 }
-.small-box .small-box-footer:hover {
-  background-color:#2563EB;
-  color:#F9FAFB;
-}
+
 
 
 /* 키워드도구 - 아이템 소싱 */
@@ -7482,6 +7484,7 @@ footer.main-footer .pull-right a{
 #groupData .box-header .box-title {
   display:flex;
   align-items:center;
+  padding-right:0;
 }
 #groupData .box-header .box-title i {
   position:absolute;
@@ -7617,6 +7620,8 @@ footer.main-footer .pull-right a{
   border-color: #2563EB;
 }
 .box > .box-header.pull-right .box-title {
+  display:inline-block;
+  padding-right:0;
   font-size:14px !important;
 }
 .box > .box-header.pull-right .box-title + .box-title {
@@ -7643,6 +7648,188 @@ footer.main-footer .pull-right a{
 }
 
 
+
+/* 최적화 진단 */
+.mainbanner + .box-header {
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom:24px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  color: #4B5563;
+  padding: 24px;
+}
+
+.box-profile {
+  padding:0;
+}
+.box-profile .callout[class*='callout']{
+  background-color:#F4F4F4 !important;
+}
+.mainbanner + .box-header + .box {
+  padding:0;
+}
+.mainbanner + .box-header + .box .row {
+  margin:0;
+}
+.mainbanner + .box-header + .box .col-md-12 {
+  padding:0;
+}
+
+.callout + .list-group-unbordered {
+  margin-bottom:0;
+}
+.callout + .list-group-unbordered li {
+  padding:24px;
+}
+.callout + .list-group-unbordered li .form-group + .form-group {
+  margin-bottom:12px;
+  margin-left:0;
+}
+.callout + .list-group-unbordered li .form-group:last-child {
+  margin-bottom:0;
+}
+.callout + .list-group-unbordered li #btnSearch {
+  background-color:#2563EB !important;
+  color:#fff;
+  width:100%;
+}
+
+.box-body {
+  padding:0;
+}
+#inquiryBox {
+  margin:0;
+}
+#inquiryBox .col-md-12 {
+  display: flex;
+  flex-wrap: wrap;
+  margin:-2px;
+  padding:0;
+}
+#inquiryBox .btn {
+  margin:2px;
+  padding:6px 12px;
+  border-color:#2563EB;
+  color:#2563EB;
+  background-color:#fff;
+  border-radius:6px;
+}
+#inquiryBox .btnDeleteResult {
+  margin-left:2px !important;
+  margin-right:16px !important;
+  border-color:#EF4444;
+  color:#EF4444;
+}
+
+
+
+/* 최적화 진단결과 */
+#pdf_wrap .box {
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  color: #4B5563;
+  padding: 24px;
+}
+#pdf_wrap .box .row {
+  margin:0;
+}
+#pdf_wrap .box .row [class*='col-'] {
+  padding:0;
+}
+#pdf_wrap .box + .box {
+  margin-top:24px;
+}
+
+#pdf_wrap .callout {
+  background-color:#F4F4F4 !important;
+  font-size: 14px;
+  border-radius:6px;
+}
+#pdf_wrap .box:nth-child(1) .row .col-lg-12 {
+  margin-bottom:21px;
+}
+
+#pdf_wrap .box .row .col-lg-1 {
+  width:100px;
+}
+#pdf_wrap .box .row .col-lg-11 {
+  float:right;
+  width:calc(100% - 116px);
+}
+#pdf_wrap .box .row .col-lg-11 div:nth-child(1) a {
+  color:#2563EB !important;
+  font-weight:500;
+}
+#pdf_wrap .box .row .col-lg-11 div:nth-child(2) {
+  margin:-4px;
+}
+#pdf_wrap .box .row .col-lg-11 div:nth-child(2) .btn {
+  margin:4px;
+  padding:6px 12px;
+  color:#2563EB;
+  border-color:#2563EB;
+  background-color:#fff;
+  border-radius:6px;
+}
+#pdf_wrap .box .row .col-lg-11 div:nth-child(4) {
+  margin-bottom:-18px;
+  font-size:14px !important
+}
+
+#pdf_wrap .box:nth-child(2) .row {
+  margin:-7px;
+}
+#pdf_wrap .box:nth-child(2) .col-lg-3.col-xs-6 {
+  padding:7px;
+}
+#pdf_wrap .box:nth-child(2) .row .small-box {
+  margin-bottom:0;
+}
+#pdf_wrap .callout.callout-danger {
+  background-color:#2563EB !important;
+  color:#fff !important;
+}
+#pdf_wrap .callout.callout-danger h4 {
+  margin-bottom:20px;
+}
+
+#pdf_wrap .box:nth-child(4) .knob-label {
+  margin-top:10px;
+  font-size:13px;
+  color:#4B5563;
+}
+#pdf_wrap .box:nth-child(4) .knob-label font {
+  font-size:25px;
+  font-weight:700;
+}
+
+
+/* 상세페이지 추출 */
+#extractForm {
+  margin-bottom:-24px;
+}
+#extractForm .input-group {
+  width:100%;
+}
+#extractForm ~ .btn {
+  margin-top:24px;
+  min-width: 128px;
+  padding: 9px 12px;
+  background-color: #fff;
+  color: #2563EB;
+  border-radius: 6px;
+  border-color: #2563EB;
+}
+#responseBody {
+  padding:24px;
+}
+.box-header .box-title {
+  display:block;
+  padding-right:140px;
+}
 
 
 
@@ -7758,6 +7945,17 @@ footer.main-footer .pull-right a{
     border:none;
   }
 
+  /* 서브 타이틀 */
+  .box-header .box-title {
+    display:block;
+  }
+  .box-header > .box-title + .box-header.pull-right {
+    position: relative;
+    top:0;
+    right:0;
+    margin-top:24px;
+  }
+
   /* 키워드도구 - 카운트 박스 */
   .small-box .inner {
     padding:27px 8px;
@@ -7817,6 +8015,26 @@ footer.main-footer .pull-right a{
   }
   #changeForm2 {
     display:block;
+  }
+
+
+  /* 순위 추적 - 빠른 순위추적 */
+  .box > .box-header.pull-right .box-title + .box-title{
+    margin-top:14px;
+    margin-left:0;
+  }
+
+  /* 최적화 진단결과 */
+  #pdf_wrap .box .row .col-lg-1 {
+    width:100%;
+  }
+  #pdf_wrap .box .row .col-lg-11 {
+    width:100%;
+    margin-top:16px;
+    float:none;
+  }
+  #pdf_wrap .box:nth-child(4) .knob-label {
+    margin-bottom:24px;
   }
 
 }
