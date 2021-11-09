@@ -7945,6 +7945,11 @@ footer.main-footer .pull-right a{
     border:none;
   }
 
+  /* 서브  wrap */
+  .content-wrapper {
+    padding-bottom:16px;
+  }
+
   /* 서브 타이틀 */
   .box-header .box-title {
     display:block;
@@ -7974,6 +7979,7 @@ footer.main-footer .pull-right a{
   }
   #chartBox + .tableBox > span:nth-of-type(1) {
     display: block;
+    float:none !important;
     margin:0 0 5px 0;
   }
   #chartBox + .tableBox #dataTable {
