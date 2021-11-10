@@ -6576,6 +6576,7 @@ footer.main-footer .pull-right a{
 
 
 /* 서브 박스 */
+/* section.content > .box { */
 .mainbanner + .box {
   overflow: hidden;
   border-radius:6px;
@@ -7215,7 +7216,6 @@ footer.main-footer .pull-right a{
 }
 
 /* 키워드도구 - 멀티 */
-
 .mainbanner + .box > .box-header.with-border label {
   display:flex;
   align-items: center;
@@ -7274,6 +7274,127 @@ footer.main-footer .pull-right a{
 #chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(8) {border-bottom:none;}
 #chartBox + .table-responsive>  #dataTable thead tr:first-child th:nth-child(9) {border-bottom:none;}
 
+
+
+/* 추천영상 더보기 */
+style  + .content-wrapper .box {
+  padding:24px 0;
+}
+style  + .content-wrapper .box .box.box-body {
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  color: #4B5563;
+  padding: 24px;
+}
+.timeline > li {
+  margin:0;
+}
+.timeline > li + li {
+  margin-top:36px;
+}
+.timeline > li > .fa {
+  width:32px;
+  height:32px;
+  line-height:32px;
+  background-color:#2563EB !important;
+}
+.timeline > li > .timeline-item {
+  margin-left:87px;
+  padding:24px;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.1);
+}
+.timeline > li > .timeline-item > .timeline-header {
+  border-bottom:none;
+  padding:0;
+}
+.timeline > li > .timeline-item > .timeline-header .img-circle {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.timeline > li > .timeline-item > .timeline-header a {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin-bottom: 12px;
+  margin-left: 52px;
+  font-size: 16px;
+  color:#3B82F6;
+}
+.timeline > li > .timeline-item > .timeline-header  span {
+  font-size:14px !important;
+  font-weight:400;
+}
+.timeline > li > .timeline-item > .timeline-body {
+  margin-top:24px;
+  padding:0;
+}
+
+/* 공지사항 */
+.mainbanner + .row {
+  margin-left:0;
+  margin-right:0;
+}
+.mainbanner + .row .col-xs-12 {
+  padding:0;
+}
+.mainbanner + .row .col-xs-12 .box {
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  color: #4B5563;
+}
+.mainbanner + .row .col-xs-12 .box .box-header {
+  margin-bottom: 0 !important;
+  padding: 24px;
+  border-bottom: 1px solid #EDEDED;
+}
+.box-tools form#searchForm .input-group {
+  width:232px !important;
+  border:1px solid #E5E7EB;
+  border-radius:6px;
+}
+.box-tools form#searchForm .input-group #searchValue {
+  border:none;
+}
+.box-tools form#searchForm .input-group .btn {
+  min-width:40px;
+  background-color:transparent;
+  border-color:transparent;
+}
+.box-tools form#searchForm .input-group .btn:active {
+  padding:0;
+  box-shadow:none;
+}
+.box-tools form#searchForm .input-group .btn i {
+  color:#9CA3AF;
+  font-size:16px;
+}
+.mainbanner + .row .col-xs-12 .box table td {
+  text-align:center;
+}
+.mainbanner + .row .col-xs-12 .box table td.subj {
+  text-align:left;
+  color:#4B5563;
+}
+#dataTables-example_paginate {
+  text-align:center;
+}
+.pagination {
+  margin:32px 0;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color:#2563EB;
+  border-color:#2563EB;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+  padding:7px 12px;
+  font-size:13px;
+}
+/* 상품판매 노하우 */
 
 
 /* 광고전략도구 - 광고경쟁분석 */
@@ -8121,6 +8242,29 @@ footer.main-footer .pull-right a{
     margin-bottom:24px;
   }
 
+
+/* 추천영상 더보기 */
+  style + .content-wrapper .content > .box > .box.box-body .row:nth-child(1) {
+    margin-top:0;
+  }
+  .timeline > li > .timeline-item {
+    margin-left:60px;
+  }
+
+  /* 공지사항 */
+  .mainbanner + .row .col-xs-12 .box .box-header {
+    padding:10px;
+  }
+  .box-tools form#searchForm {
+    margin-top:12px;
+  }
+  .box-tools form#searchForm .input-group {
+    width:100% !important;
+  }
+  .box-tools form#searchForm .input-group .btn {
+    margin-top:0;
+  }
+  /* 상품판매 노하우 */
 
   /* 광고전략도구 - 광고경쟁분석 */
   .box-header > .box-title + .box-tools {
