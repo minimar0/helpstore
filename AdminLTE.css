@@ -8062,11 +8062,17 @@ footer.main-footer .pull-right a{
   }
 
   /* 마이 */
+  .content-header + .content > .box { 
+    padding:12px;
+  }
   #changeForm  label,
   #changeForm2 label,
   #changeForm3 label {
     display:block;
     margin-bottom:10px;
+  }
+  #changeForm .form-group label {
+    margin-bottom:5px;
   }
   #changeForm2 .input-group + .input-group {
     margin-top:10px;
@@ -8084,9 +8090,19 @@ footer.main-footer .pull-right a{
   #changeForm2 {
     display:block;
   }
+  .content .box:nth-child(2) .box-header .box-title font {
+    margin-top:5px;
+  }
+  .content .box:nth-child(2) .box-header .box-title font + .btn {
+    margin-top:5px;
+    margin-left:0;
+  }
 
 
   /* 순위 추적 - 빠른 순위추적 */
+  .form-group.col-xs-12 {
+    padding:12px;
+  }
   .box > .box-header.pull-right .box-title + .box-title{
     margin-top:14px;
     margin-left:0;
