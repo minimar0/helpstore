@@ -7277,7 +7277,7 @@ footer.main-footer .pull-right a{
 
 
 /* 추천영상 더보기 */
-style  + .content-wrapper .box {
+/* style  + .content-wrapper .box {
   padding:24px 0;
 }
 style  + .content-wrapper .box .box.box-body {
@@ -7287,7 +7287,7 @@ style  + .content-wrapper .box .box.box-body {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
   color: #4B5563;
   padding: 24px;
-}
+} */
 .timeline > li {
   margin:0;
 }
@@ -7954,10 +7954,163 @@ style  + .content-wrapper .box .box.box-body {
 
 
 
+/* 로그인 회원가입 */
+.login-box, .register-box {
+  width:368px;
+}
+.login-logo, .register-logo {
+  margin-bottom:32px;
+}
+.login-logo a b, .register-logo a b {
+  font-size:32px;
+  color:#4B5563;
+  font-weight:400;
+}
+.login-box-body, .register-box-body {
+  padding:24px;
+  border-radius:6px;
+  box-shadow:0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+.login-page,.register-page{
+  background-color:#eff6ff;
+}
+#loginForm .form-group ,
+#joinForm .form-group,
+#findForm .form-group {
+  overflow:hidden;
+  margin:0 0 20px 0;
+  border:1px solid #D1D5DB;
+  border-radius:6px;
+}
 
+#loginForm .form-group .glyphicon,
+#joinForm .form-group .glyphicon,
+#findForm .form-group .glyphicon {
+  display:none;
+}
+#loginForm .form-group input,
+#joinForm .form-group input,
+#findForm .form-group input {
+  height:40px;
+  border:none;
+}
+#joinForm #requestBtn,
+#joinForm #inputAuthNoBtn {
+  min-width:auto;
+  height:40px;
+  margin:0;
+  padding:9px 8px;
+  background-color:#F1F5F9 !important;
+  border:none;
+  color:#4B5563;
+  font-size:13px;
+}
 
+#btnLogin, #btnJoin, #btnFind {
+  height:40px;
+  background-color:#2563EB;
+  color:#fff;
+  border-radius:6px;
+}
 
+.login-box-body a {
+  font-size:13px;
+  color:#2563EB;
+}
+.login-box-body a:nth-of-type(3) {
+  margin-right:12px;
+}
+#loginForm div:nth-of-type(3),
+#findForm div:nth-of-type(3) {
+  margin:0;
+}
+#loginForm div:nth-of-type(3) .col-xs-8,
+#findForm div:nth-of-type(3) .col-xs-8 {
+  width:0;
+  padding:0;
+}
+#loginForm div:nth-of-type(3) .col-xs-4,
+#findForm div:nth-of-type(3) .col-xs-4 {
+  width:100%;
+  padding:0;
+}
 
+#joinForm div:nth-of-type(8) {
+  margin-top:24px;
+  font-size:13px !important;
+}
+
+#joinForm + a,
+#findForm + a {
+  display:block;
+  margin-top:24px;
+  font-size:13px;
+  color:#2563EB;
+  text-align:left;
+}
+
+#joinForm div:nth-of-type(9) {
+  font-size: 14px !important;
+  color:#4B5563;
+}
+#joinForm [class*='icheckbox'] {
+  position:relative;
+  width:16px;
+  height:16px;
+  background:none;
+  padding-left:19px;
+}
+#joinForm [class*='icheckbox']::before {
+  content:'';
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:16px;
+  height:16px;
+  border:1px solid #D1D5DB;
+  border-radius:4px;
+}
+#joinForm [class*='icheckbox'].checked::before {
+  border-color:#2563EB;
+  background-color:#2563EB;
+}
+#joinForm [class*='icheckbox'].checked::after {
+	content:'';
+	display:block;
+	position:absolute;
+	top:3px;
+	left:6px;
+	width:4px;
+	height:8px;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	transform:rotate(-135deg);
+}
+#joinForm [class*='icheckbox'] + span {
+  padding:0 !important;
+  font-size:14px;
+  font-weight:500;
+  color:#4B5563;
+  cursor:pointer;
+}
+#joinForm hr:nth-of-type(1) {
+  margin:16px 0 !important;
+}
+#joinForm div:nth-of-type(10),
+#joinForm div:nth-of-type(11),
+#joinForm div:nth-of-type(12) {
+  margin:0 0 10px 24px !important;
+  padding:0 !important;
+  font-size:14px !important;
+
+}
+#joinForm div:nth-of-type(10) a ,
+#joinForm div:nth-of-type(11) a,
+#joinForm div:nth-of-type(12) a {
+  color:#9CA3AF !important;
+  text-decoration:underline;
+}
 
 @media only screen and (max-width: 991px) {
   section.content {
@@ -8229,6 +8382,15 @@ style  + .content-wrapper .box .box.box-body {
     margin-left:0;
   }
 
+  /* 최적화 진단 */
+  .callout + .list-group-unbordered {
+    margin-top:10px;
+  }
+  .callout + .list-group-unbordered li {
+    padding:0;
+    border:none;
+  }
+
   /* 최적화 진단결과 */
   #pdf_wrap .box .row .col-lg-1 {
     width:100%;
@@ -8244,9 +8406,9 @@ style  + .content-wrapper .box .box.box-body {
 
 
 /* 추천영상 더보기 */
-  style + .content-wrapper .content > .box > .box.box-body .row:nth-child(1) {
+  /* style + .content-wrapper .content > .box > .box.box-body .row:nth-child(1) {
     margin-top:0;
-  }
+  } */
   .timeline > li > .timeline-item {
     margin-left:60px;
   }
