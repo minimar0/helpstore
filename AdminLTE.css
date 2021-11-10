@@ -7844,7 +7844,8 @@ footer.main-footer .pull-right a{
   }
 
   /* 메인 레이아웃 커스텀 */
-  .content > .box:nth-child(1) .row:nth-child(1) .col-md-8 {
+  .content > .box:nth-child(1) .row:nth-child(1) .col-md-8,
+  .content > .box:nth-child(1) .row:nth-child(2) .col-md-8 {
     width:100% !important;
   }
   .content > .box:nth-child(1) .row:nth-child(3) .col-md-4 {
@@ -7852,6 +7853,9 @@ footer.main-footer .pull-right a{
   }
   .content > .box:nth-child(1) .row:nth-child(3) .col-md-4 + .col-md-4 {
     margin-top:16px;
+  }
+  .content > .box > .row .col-md-8 {
+    margin-top:36px;
   }
 
 
@@ -7878,6 +7882,13 @@ footer.main-footer .pull-right a{
   .content-header > .breadcrumb {
     margin-top:10px;
     padding:7px 5px;
+  }
+  .content-header > h1 {
+    display:block;
+  }
+  .content-header .btn-group {
+    margin-top:5px;
+    margin-left:0;
   }
 
   /* 서브 상단 배너 */
@@ -7950,23 +7961,41 @@ footer.main-footer .pull-right a{
     padding-bottom:16px;
   }
 
+  /* 서브 박스 */
+  .mainbanner + .box > div {
+    padding:10px;
+  }
+
   /* 서브 타이틀 */
   .box-header .box-title {
     display:block;
+    padding-right:0;
   }
   .box-header > .box-title + .box-header.pull-right {
     position: relative;
     top:0;
     right:0;
-    margin-top:24px;
+  }
+  .box-header > .box-title + .box-header.pull-right .btn {
+    margin-top:12px;
   }
 
   /* 키워드도구 - 카운트 박스 */
+  #countBox,
+  #countBox + .tableBox {
+    padding:12px 12px 0;
+  }
+  #countBox + .tableBox {
+    padding:0 12px 12px;
+  }
   .small-box .inner {
     padding:27px 8px;
   }
+  .small-box .inner h3 {
+    font-size:20px;
+  }
   .small-box .inner p {
-    font-size:14px;
+    font-size:12px;
   }
 
   /* 키워드도구 - 안내문구 및 엑셀다운로드 버튼 */
@@ -7986,17 +8015,50 @@ footer.main-footer .pull-right a{
     margin-top:24px;
   }
 
+  /* 키워드도구 - 인풋 */
+  .box-title .input-group {
+    width:100%;
+  }
+
+  /* 키워드도구 - 검색어,검색섹션 */
+  #shoppingKeywordSection {
+    margin-top:8px;
+  }
+  #shoppingKeywordSection + #shoppingKeywordSection {
+    margin-top:0;
+  }
+  #shoppingKeywordSection,
+  #searchSectionSection  {
+    padding:12px;
+  }
+
   /* 키워드도구 - 아이템 소싱 */
   #outlinkLayer label {
     width:auto;
     margin-right:5px;
   }
+
+  /* 키워드도구 - 트렌드, 챠트 박스 */
+  #chartBox .box-header {
+    padding:12px 12px 0;
+  }
   /* 키워드도구 - 트렌드 */
+  #trendForm .row {
+    padding-left:12px !important;
+    padding-right:12px !important;
+  }
   #trendForm .row .form-group {
     margin-bottom:5px !important
   }
   #trendForm .row:nth-child(1) select {
     width:100%;
+  }
+  /* 키워드도구 - 멀티 */
+  .mainbanner + .box > .box-header.with-border .form-group {
+    margin-bottom:0;
+  }
+  .mainbanner + .box > .box-header.with-border .form-group + .form-group {
+    margin-top:16px;
   }
 
   /* 마이 */
@@ -8043,4 +8105,21 @@ footer.main-footer .pull-right a{
     margin-bottom:24px;
   }
 
+
+  /* 광고전략도구 - 광고경쟁분석 */
+  .box-header > .box-title + .box-tools {
+    position:relative;
+    top:0;
+    right:0;
+  }
+  .box-header > .box-title + .box-tools .btn {
+    margin-top:12px;
+  }
+
+
+  /* 상세페이지 추출 */
+  #extractForm ~ .btn {
+    margin-top:10px;
+  }
+  
 }
