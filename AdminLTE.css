@@ -7395,7 +7395,19 @@ style  + .content-wrapper .box .box.box-body {
   font-size:13px;
 }
 /* 상품판매 노하우 */
-
+/* .content .row {
+  margin:0;
+}
+.content .row .col-xs-12 {
+  padding:0;
+}
+.content .row .col-xs-12 .box {
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  color: #4B5563;
+} */
 
 /* 광고전략도구 - 광고경쟁분석 */
 .box-header .box-title #limitCount,
@@ -8426,7 +8438,9 @@ style  + .content-wrapper .box .box.box-body {
   .box-tools form#searchForm .input-group .btn {
     margin-top:0;
   }
+
   /* 상품판매 노하우 */
+
 
   /* 광고전략도구 - 광고경쟁분석 */
   .box-header > .box-title + .box-tools {
