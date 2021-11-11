@@ -6583,7 +6583,7 @@ footer.main-footer .pull-right a{
 }
 
 .content-header + .content > .box .box-header {
-  padding:24px;
+  /* padding:24px; */
 }
 
 .box-body.table-responsive {
