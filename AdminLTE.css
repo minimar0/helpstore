@@ -6573,8 +6573,6 @@ footer.main-footer .pull-right a{
   height:auto !important;
 }
 
-
-
 /* 서브 박스 */
 .mainbanner + .box {
   overflow: hidden;
@@ -6584,7 +6582,6 @@ footer.main-footer .pull-right a{
   color:#4B5563;
   padding:0 !important;
 }
-
 .mainbanner + .box > div {
   margin-bottom:0 !important;
   padding:24px;
